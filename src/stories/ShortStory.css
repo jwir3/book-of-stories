@@ -1,21 +1,21 @@
-.text-block {
+.short-story {
     margin-left: 3rem;
     text-align: left;
 }
 
-.text-block > h1 {
+.short-story > h1 {
     font-size: 24pt;
     margin-bottom: 1rem;
 }
 
-p {
+.short-story p {
     font-size: 14pt;
     font-family: 'Roboto', sans-serif;
     max-width: 60%;
     line-height: 1.1;
 }
 
-p:first-of-type:first-letter {
+.short-story p:first-of-type:first-letter {
     color: rgb(150, 0, 20);
     float: left;
     font-family: Georgia;

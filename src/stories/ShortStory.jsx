@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import { v4 as uuidv4 } from 'uuid';
 
-import "./TextBlock.css";
+import "./ShortStory.css";
 
-export const TextBlock = (props) => {
-    const id = 'blah';
+export const ShortStory = (props) => {
+    const id = uuidv4();
     const title = !props.title ? null : (<h1>{props.title}</h1>);
     const paragraphChildren = props.paragraphs.map((value, index) => {
         // Generate a random key for this
@@ -11,9 +12,9 @@ export const TextBlock = (props) => {
         return (<p key={createdKey}>{value}</p>)
     });
     return (
-        <div className="text-block">
+        <div className="short-story">
             {title}
             {paragraphChildren}
         </div>
     );
-}
+};
