@@ -2,11 +2,14 @@
   "name": "book-of-stories",
   "version": "0.2.0",
   "description": "Storybook with some user interface for large areas of text. Mainly for testing chromatic, but also for storing fictional works.",
-  "author": "Scott Johnson <jaywir3@gmail.com>",
+  "author": {
+    "name": "Scott Johnson",
+    "email": "jaywir3@gmail.com"
+  },
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jwir3/book-of-stories"
+    "url": "git+https://github.com/jwir3/book-of-stories.git"
   },
   "license": "MIT",
   "private": true,
@@ -21,7 +24,8 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "init-msw": "msw init public/"
+    "init-msw": "msw init public/",
+    "chromatic": "npx chromatic --force-rebuild --project-token=${CHROMATIC_PROJECT_TOKEN}"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.5.2",
@@ -44,5 +48,11 @@
   },
   "resolutions": {
     "jackspeak": "2.1.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/jwir3/book-of-stories/issues"
+  },
+  "readme": "ERROR: No README data found!",
+  "homepage": "https://github.com/jwir3/book-of-stories#readme",
+  "_id": "book-of-stories@0.2.0"
 }
